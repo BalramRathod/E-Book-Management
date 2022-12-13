@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+	id="WebApp_ID" version="4.0">
+	<display-name>E-BookM-anagementApp</display-name>
+	<welcome-file-list>
+		 <welcome-file>index.html</welcome-file> <welcome-file>index.htm</welcome-file> 
+			<welcome-file>index.jsp</welcome-file> <welcome-file>default.html</welcome-file> 
+			<welcome-file>default.htm</welcome-file> <welcome-file>default.jsp</welcome-file> 
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+
+
+	<servlet>
+		
+		<servlet-name>firstServlet</servlet-name>
+		<servlet-class>com.amstech.userServlet.UserSignup</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>firstServlet</servlet-name>
+		<url-pattern>/UserSignup</url-pattern>
+	</servlet-mapping> 
+
+
+	<servlet>
+		
+		<servlet-name>userLogin</servlet-name>
+		<servlet-class>com.amstech.userServlet.UserLogin</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>userLogin</servlet-name>
+		<url-pattern>/UserLogin</url-pattern>
+	</servlet-mapping>
+
+
+</web-app>
